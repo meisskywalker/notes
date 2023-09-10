@@ -1,0 +1,26 @@
+* Prolog
+  This are notes that i take while watching You Tube video call {https://youtu.be/BpPEoZW5IiY?si=I_b-zmcVxAhzAPQh}[Learn Rust Programming - Complete Course 🦀]. This course is brought by {https://www.youtube.com/channel/UC_ne_iOUtUPtKiBasvWgz_g}[Arfan Zubi]. These are the reason why learning Rust:
+  - Blazingly fast
+  - Rich type system
+  - no garbage collector
+  - usefull compiler output
+  - memory safety
+  - most beloved programming language
+
+  Several resources for learning Rust:
+  - {https://doc.rust-lang.org/book/}[The Book]
+  - {https://github.com/rust-lang/rustlings}[Rustlings]
+  - {https://doc.rust-lang.org/rust-by-example/}[Rust by Example]
+  - {https://practice.rs/why-exercise.html}[Rust by Practice]
+
+  Example code
+  @code rust
+  fn main() {
+    println!("Hello World!");
+  }
+  @end
+  Explanations:
+  /main/ function in the entry point of the code, we declare function with the /fn/ keyword. /println/ is a macro and all macro will be ended with explanation mark.
+
+* Table of contents
+  {:variables:}[variables]

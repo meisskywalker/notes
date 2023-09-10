@@ -1,0 +1,40 @@
+@document.meta
+title: variables
+description: A little note that explains variables and mutability in Rust
+authors: sky
+categories: [
+  variable
+]
+created: 2023-09-10T20:37:56+0700
+updated: 2023-09-10T21:22:56+0700
+version: 1.1.1
+@end
+
+* Prolog
+  - Variable is *assigned* using /let/ keyword
+  - We can *print* variable with *print!()* or *println!()* macros.
+  - *Scope* of variabel is defined by the *block of code* in which it is declared
+  - *Function* is a named block of code that is *reuseable*
+  - *Shadowing* allows a variable to be *re-declared* in the *same scope* with the *same name*
+
+* Examples
+  A variable must be declared before it can be used
+  @code rust
+  fn main() {
+    // This will occour an error
+    // let x: i32;
+    let x: i32 = 5; // This is a correct statement
+    // give an underscore prefix to fix this
+    let y: i32; // Variable is unused, this will occour a warning
+  }
+  @end
+
+  Variables is immutable by default
+  @code rust
+  fn main() {
+    // This will occour an error
+    // let x = 1;
+    let mut x = 1;
+    x += 1;
+  }
+  @end
